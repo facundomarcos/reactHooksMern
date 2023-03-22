@@ -29,7 +29,7 @@ import PropTypes from 'prop-types';
 
 
  // props
- export const First = ({title, subTitle}) =>{
+ export const First = ({title, subTitle, name}) =>{
    // console.log(props);
    if(!title){
     throw new Error('No existe el title');
@@ -38,14 +38,21 @@ import PropTypes from 'prop-types';
          <>
        <h1>{title}</h1>
         <p>{subTitle + 1}</p>
+        <p>{name}</p>
         </>
        
     ) ;
  }
-
+ 
+//se colocan al final
 First.propTypes = {
     title: PropTypes.string.isRequired,
-    subTitle: PropTypes.number.isRequired
+    subTitle: PropTypes.string
 }
 
-
+First.defaultProps = {
+    name: 'Fernando',
+    subTitle:'No hay subtitulo',
+    title:'No hay titulo',
+    
+}
