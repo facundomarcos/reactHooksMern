@@ -25,11 +25,15 @@
 // const getResult =()=>{
 //     return 4+4
 // }
+import PropTypes from 'prop-types';
 
 
  // props
  export const First = ({title, subTitle}) =>{
    // console.log(props);
+   if(!title){
+    throw new Error('No existe el title');
+   }
     return(
          <>
        <h1>{title}</h1>
@@ -39,6 +43,9 @@
     ) ;
  }
 
-
+First.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.number.isRequired
+}
 
 
