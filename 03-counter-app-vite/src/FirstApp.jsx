@@ -27,15 +27,18 @@
 // }
 
 
-// fragmento sin importarcion
-export function First(){
-    return (
-        <>
-        {/* <h1>{getResult()}</h1> */}
-        {/* <code>{JSON.stringify(newMensaje)}</code> */}
-        <h1>Hola</h1>
-        <p>un parrafo</p>
+ // props
+ export const First = ({title, subTitle}) =>{
+   // console.log(props);
+    return(
+         <>
+       <h1>{title}</h1>
+        <p>{subTitle + 1}</p>
         </>
        
     ) ;
-}
+ }
+
+
+
+
