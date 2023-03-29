@@ -1,0 +1,14 @@
+https://jestjs.io/
+
+npm install --save-dev jest
+
+
+Add the following section to your package.json:
+
+{
+  "scripts": {
+      "test": "jest --watchAll"
+  }
+}
+
+npm run test
