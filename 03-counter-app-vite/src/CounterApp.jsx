@@ -1,23 +1,22 @@
+
+import { useState } from 'react'; //Hook
 import PropTypes from 'prop-types';
 
 
  // props
  export const CounterApp = ({value}) =>{
-   // console.log(props);
-   if(!value){
-    throw new Error('No existe el value');
-   }
+    const [ counter, setCounter ] = useState( value );
 
    const handleAdd = () => 
-    {console.log('+1');
-    value = 1000;
-    console.log(value);
+    {
+    setCounter (counter + 1);
+    //setCounter((c) => c + 1);
     }
 
     return(
          <>
        <h1>Counter App</h1>
-        <p> { value } </p>
+        <p> { counter } </p>
 
         <button onClick={handleAdd}> +1 </button>
    
