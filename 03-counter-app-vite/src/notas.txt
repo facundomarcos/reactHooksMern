@@ -12,3 +12,6 @@ Add the following section to your package.json:
 }
 
 npm run test
+
+instalacion del intellicense
+npm add --D @types/jest
