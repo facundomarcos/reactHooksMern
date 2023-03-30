@@ -58,8 +58,3 @@ First.defaultProps = {
 }
 
 
-//https://testing-library.com/
-//npm install --save-dev @testing-library/react
-
-
-//https://jestjs.io/docs/getting-started

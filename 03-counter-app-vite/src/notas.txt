@@ -22,3 +22,8 @@ npm install --save-dev babel-jest @babel/core @babel/preset-env
 
 
 
+//https://testing-library.com/
+//npm install --save-dev @testing-library/react
+
+
+//https://jestjs.io/docs/getting-started
