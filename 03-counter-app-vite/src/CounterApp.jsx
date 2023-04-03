@@ -23,11 +23,11 @@ import PropTypes from 'prop-types';
     return(
          <>
        <h1>Counter App</h1>
-        <p> { counter } </p>
+        <h2> { counter } </h2>
 
         <button onClick={handleAdd}> +1 </button>
         <button onClick={handleSubs}> -1 </button>
-        <button onClick={handleReset}> Reset </button>
+        <button aria-label="btn-reset" onClick={handleReset}> Reset </button>
         </>
        
     ) ;
