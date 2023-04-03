@@ -31,3 +31,9 @@ npm install --save-dev babel-jest @babel/core @babel/preset-env
 
 
 //https://jestjs.io/docs/getting-started
+
+
+//estructura de react - documentacion
+https://es.reactjs.org/docs/faq-structure.html
+
+https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
