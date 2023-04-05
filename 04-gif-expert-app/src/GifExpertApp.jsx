@@ -23,10 +23,10 @@ export const GifExpertApp = () => {
 
 
       {/* input */}
-      <AddCategory />
+      <AddCategory setCategories={setCategories}/>
 
       {/* listado */}
-      <button onClick={onAddCategory}>Agregar</button>
+      {/* <button onClick={onAddCategory}>Agregar</button> */}
       <ol>
         { categories.map(categorie => {
             return <li key={ categorie }>{categorie}</li>
